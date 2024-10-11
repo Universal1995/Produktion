@@ -87,7 +87,7 @@ const CACHE_NAME = "web-app-cache-v5";
 // The list of static files your app needs to start.
 const PRE_CACHED_RESOURCES = ["/", "/index.html", "/styles.css", "/composeApp.js", "/images/smallicon.png", "/images/largeicon.png"];
 
-/*
+
 self.addEventListener("activate", event => {
   console.log("Activate event in progress.");
   async function deleteOldCaches() {
@@ -102,22 +102,22 @@ self.addEventListener("activate", event => {
     }
 
     event.waitUntil(deleteOldCaches());
-});*/
+});
 
 self.addEventListener("install", event => {
   console.log("Install event in progress.");
-  /*async function preCacheResources() {
+  async function preCacheResources() {
       // Open the app's cache.
       const cache = await caches.open(CACHE_NAME);
       // Cache all static resources.
       cache.addAll(PRE_CACHED_RESOURCES);
     }
 
-    event.waitUntil(preCacheResources());*/
+    event.waitUntil(preCacheResources());
   self.skipWaiting();
 });
 
-/*self.addEventListener("fetch", event => {
+self.addEventListener("fetch", event => {
   console.log("Fetch event in progress.");
   async function returnCachedResource() {
       // Open the app's cache.
@@ -139,4 +139,4 @@ self.addEventListener("install", event => {
     }
 
     event.respondWith(returnCachedResource());
-});*/
+});
