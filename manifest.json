@@ -1,5 +1,4 @@
 {
-  "android_package_name": "com.rte.android",
   "short_name": "Produktion",
   "name": "Produktion",
   "description": "blabla",
@@ -63,7 +62,7 @@
   ],
   "background_color": "#F4F6FE",
   "display": "standalone",
-  "start_url": "/Produktion/",
+  "start_url": "https://universal1995.github.io/Produktion/",
   "scope": "/",
   "theme_color": "#ffffff",
   "screenshots": [
